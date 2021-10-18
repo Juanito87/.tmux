@@ -1,5 +1,5 @@
 #!/bin/bash
-tmux neww
+tmux neww -n:deploy
 tmux split-window -h
 tmux split-window -v
 tmux split-window -v
