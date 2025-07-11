@@ -1,0 +1,26 @@
+---
+session_name: deploy
+windows:
+  - window_name: deploy
+    layout: tiled
+    panes:
+      - shell_command:
+          - a9
+          - cd rpcpool/main
+          - git pull
+        focus: true
+        pane_name: Main-Pull
+      - shell_command:
+          - a9
+          - cd rpcpool
+          - clear
+        pane_name: RPCPool
+      - shell_command:
+          - clear
+        pane_name: Right-Top
+      - shell_command:
+          - clear
+        pane_name: Right-Mid
+      - shell_command:
+          - clear
+        pane_name: Right-Bottom
